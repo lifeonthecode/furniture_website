@@ -184,7 +184,41 @@ img {
     font-weight: var(--fw-400);
     color: var(--color_white);
     text-transform: capitalize;
+    position: relative;
+    transition: all .5s ease;
+    
 }
+.desktop_menu menu li a:hover {
+    color: var(--bg-color-2);
+}
+.desktop_menu menu li a::before {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--bg-color-10);
+    transition: width .5s;
+}
+.desktop_menu menu li a:hover::before {
+    width: 80%;
+}
+
+.desktop_menu menu li a::after {
+    position: absolute;
+    content: " ";
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--bg-color-2);
+    transition: width .5s;
+}
+.desktop_menu menu li a:hover::after {
+    width: 90%;
+}
+
 
 
 
@@ -200,6 +234,11 @@ img {
     color: var(--bg-color-3);
     line-height: var(--lh_75);
     margin-bottom: 73px;
+    transition: all .3s ease;
+}
+
+.header_bottom_text h2:hover {
+    color: var(--color_yellow);
 }
 
 
@@ -216,12 +255,22 @@ img {
 .header_bottom_picture  picture img {
     position: relative;
     z-index: 1;
+    transition: all .3s ease;
+}
+
+.header_bottom_picture:hover  picture img {
+    transform: scale(1.1);
 }
 
 .header_bottom_dotted_img {
 	position: absolute;
 	top: 38px;
 	right: 0px;
+    transition: all .3s ease;
+}
+
+.header_bottom_picture:hover  .header_bottom_dotted_img {
+    transform: scale(1.1);
 }
 
 
@@ -283,6 +332,17 @@ img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+    transition: all .3s ease;
+}
+.crafted_inner_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+    transition: all .3s ease;
+}
+
+.crafted_text_and_image:hover .crafted_inner_image img {
+    transform: scale(1.1);
 }
 
 
@@ -292,6 +352,11 @@ img {
     font-weight: var(--fw-600);
     color: var(--color_gray_black);
     text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+.crafted_text_and_image:hover .crafted_inner_text h5 {
+    color: var(--bg-color-1);
 }
 
 .crafted_inner_text span {
@@ -647,6 +712,13 @@ img {
     background-color: var(--bg-color-1);
 }
 
+.recently_wrapper {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.recently_wrapper:hover {
+    margin-top: 50px;
+}
 
 .recently_wrapper img {
     min-width: 360px;
@@ -727,18 +799,30 @@ img {
     align-items: center;
     color: var(--color_white);
     font-size: var(--fs-20);
+    transition: all .3s ease;
+}
+.subscribe_input_controller div button:hover {
+    transform: rotate(-360deg);
 }
 
 
 .subscribe_image_wrapper {
 	margin-top: -200px;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
 .subscribe_image_wrapper img {
     max-width: 458px;
     width: 100%;
     min-height: 396px;
+    
 }
+
+.subscribe_image_wrapper:hover {
+    margin-top: -150px;
+}
+
 
 
 
