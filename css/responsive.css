@@ -1,0 +1,111 @@
+
+/* xxl devices  */
+@media (min-width: 1400px) {
+
+}
+
+/* xl devices  */
+@media (max-width: 1400px) {
+
+
+}
+
+/* lg devices  */
+@media (max-width: 1200px) {
+    
+}
+/* md devices  */
+@media (max-width: 992px) {
+    .header_right {
+        column-gap: 20px;
+    }
+
+    .crafted_text_and_image {
+        margin-bottom: 100px;
+    }
+
+    .choose_image_wrapper::after {
+        display: none;
+        visibility: hidden;
+    }
+
+    .interior_text_wrapper {
+        margin-top: 54px;
+    }
+
+    .owl-prev {
+        position: relative;
+        top: 40px;
+        left: -85px;
+    }
+    .owl-next {
+        position: relative;
+        top: 40px;
+        right: -85px;
+    }
+
+
+    .subscribe_image_wrapper {
+        margin-top: 0px;
+    }
+
+    .subscribe_image_wrapper:hover {
+        margin-top: -20px;
+    }
+
+}
+/* sm devices  */
+@media (max-width: 768px) {
+
+    .crafted_text {
+        margin-bottom: 90px;
+    }
+
+    .interior_inner_image_dabble div:nth-child(2) img {
+        top: 0px;
+        left: 0px;
+    }
+
+    .product_wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product_inner_text {
+        text-align: center;
+    }
+
+    .recently_wrapper img {
+        max-width: 100%;
+    }
+
+    .input_name {
+        margin-bottom: 20px;
+    }
+    .input_email {
+        margin-bottom: 20px;
+    }
+
+    .subscribe_input_controller div button {
+        width: 195px;
+    }
+
+}
+
+
+/* mobile devices  */
+@media (max-width: 576px) {
+
+    .header_bottom_text h2 {
+        font-size: var(--fs-34);
+        line-height: var(--lh_41);
+    }
+
+    .owl-prev {
+        left: 0px;
+    }
+    .owl-next {
+        right: 0px;
+    }
+    
+}

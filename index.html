@@ -12,8 +12,25 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <ul>
+
+    <!-- mobile menu  -->
+    <div class="mobile_menu_container">
+        <div class="mobile_main_menu">
+            <button class="menu_close"><i class="fa-solid fa-xmark"></i></button>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+            </menu>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
     
     <!-- header section  -->
     <header class="header_section">
@@ -24,8 +41,8 @@
                 </div>
         
         
-                <div class="header_right">
-                    <nav class="desktop_menu">
+                <div class="header_right ">
+                    <nav class="desktop_menu d-none d-lg-block">
                         <menu class="d-flex align-items-center gap-5">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">About us</a></li>
@@ -40,6 +57,10 @@
                         <button><img src="assets/icon/user.svg" alt="user icon"></button>
                         <a href="#"><img src="assets/icon/cart.svg" alt="cart icon"></a>
                     </div>
+
+                    <div class="menu_bar d-block d-lg-none">
+                        <button id="menu_bar"><i class="fa-solid fa-bars"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +69,7 @@
         <section class="header_bottom">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
                         <div class="header_bottom_text">
                             <h2>"Transform your space with elegance."</h2>
 
@@ -58,13 +79,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
                         <div class="header_bottom_image">
                             <div class="header_bottom_picture">
                                 <picture>
                                     <img src="assets/banner/banner_image.png">
                                 </picture>
-                                <div class="header_bottom_dotted_img">
+                                <div class="header_bottom_dotted_img d-none d-md-block">
                                     <img src="assets/icon/Dotted.png" alt="dotted image">
                                 </div>
                             </div>
@@ -83,14 +104,14 @@
         <section class="crafted_section pt-80 pb-210">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="crafted_text">
                             <h3 class="title">Crafted with excellent material.</h3>
                             <p class="subTitle">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done.</p>
                             <button class="primary_btn">Explore</button>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="crafted_text_and_image d-flex flex-column align-items-center">
                             <div class="crafted_inner_image">
                                 <img src="assets/products/product-1.png" alt="product image 1" >
@@ -101,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="crafted_text_and_image d-flex flex-column align-items-center">
                             <div class="crafted_inner_image">
                                 <img src="assets/products/product-2.png" alt="product image 2" >
@@ -112,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="crafted_text_and_image d-flex flex-column align-items-center">
                             <div class="crafted_inner_image">
                                 <img src="assets/products/product-3.png" alt="product image 2" >
@@ -131,12 +152,12 @@
         <section class="choose_section pb-110">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="choose_text_wrapper">
                             <h3 class="title">Why Choose Us</h3>
                             <p class="subTitle">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the</p>
 
-                            <div class="row">
+                            <div class="row ">
                                 <div class="col-6">
                                     <div class="choose_inner_wrapper">
                                         <div class="choose_inner_image">
@@ -146,7 +167,7 @@
                                         <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 ">
                                     <div class="choose_inner_wrapper">
                                         <div class="choose_inner_image">
                                             <img src="assets/icon/Shop bag.png" alt="truck icon" >
@@ -164,7 +185,7 @@
                                         <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 ">
                                     <div class="choose_inner_wrapper">
                                         <div class="choose_inner_image">
                                             <img src="assets/icon/Return.png" alt="truck icon" >
@@ -176,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="choose_image_wrapper">
                             <img src="assets/why_choose/why-choose-us-img 1.png" alt="why choose image" srcset="">
                         </div>
@@ -190,13 +211,13 @@
         <section class="interior_section pb-210">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="interior_image_wrapper d-flex gap-3">
-                            <div class="interior_inner_image">
+                            <div class="interior_inner_image d-none d-sm-block">
                                 <img src="assets/interior/Mask group.png" alt="mask image">
                             </div>
-                            <div class="interior_inner_image_dabble">
-                                <div>
+                            <div class="interior_inner_image_dabble ">
+                                <div class="d-none d-md-block">
                                     <img src="assets/interior/Mask group-2.png" alt="mask image">
                                 </div>
                                 <div>
@@ -206,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="interior_text_wrapper">
                             <h3 class="title">We help  you make Modern Interior Design</h3>
                             <p class="subTitle">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the this is a long  post for the text.`This small text has to be place here, since this is a place holder. You can also chane it.</p>
@@ -238,8 +259,8 @@
         <!-- product section  -->
         <section class="product_section pb-110">
             <div class="container">
-                <div class="row">
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <div class="row gy-4">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="product_wrapper d-flex align-items-center gap-4">
                             <div class="product_inner_image">
                                 <img style="max-width: 92px;" src="assets/products/product-1.png" alt="product image one">
@@ -251,7 +272,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="product_wrapper d-flex align-items-center gap-4">
                             <div class="product_inner_image">
                                 <img style="max-width: 113px;" src="assets/products/product-2.png" alt="product one image">
@@ -263,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
                         <div class="product_wrapper d-flex align-items-center gap-4">
                             <div class="product_inner_image">
                                 <img style="max-width: 98px;" src="assets/products/product-3.png" alt="product one image">
@@ -340,7 +361,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="recently_wrapper">
                             <img src="assets/recently/recently_1.png" alt="recently image one">
 
@@ -350,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="recently_wrapper">
                             <img src="assets/recently/recently_2.png" alt="recently image two">
 
@@ -360,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
                         <div class="recently_wrapper">
                             <img src="assets/recently/recently_3.png" alt="recently image three">
 
@@ -379,7 +400,7 @@
         <section class="subscribe_section pt-110">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
                         <div class="subscribe_form_wrapper">
                             <div class="subscribe_form_header d-flex align-items-center gap-3">
                                 <img src="assets/subscribe/email.png" alt="email icon">
@@ -387,15 +408,15 @@
                             </div>
 
                             <form action="" class="subsribe_form">
-                                <div class="subscribe_input_controller d-flex align-items-center gap-4">
-                                    <div>
+                                <div class="subscribe_input_controller d-md-flex align-items-center gap-4">
+                                    <div class="input_name">
                                         <input type="text" placeholder="Enter your name">
                                     </div>
-                                    <div>
+                                    <div class="input_email">
                                         <input type="email" placeholder="Enter your e-mail">
                                     </div>
 
-                                    <div>
+                                    <div class="submit_button">
                                         <button><i class="fa-solid fa-paper-plane"></i></button>
                                     </div>
                                 </div>
@@ -403,7 +424,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
                         <div class="subscribe_image_wrapper d-flex justify-content-end">
                             <img src="assets/subscribe/sofa 1.png" alt="sofa image">
                         </div>
@@ -425,14 +446,14 @@
             </div>
 
 
-            <div class="row gx-5">
-                <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-12">
+            <div class="row gx-lg-5 gy-2">
+                <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-4 col-sm-8 col-12">
                     <div class="footer_wrapper">
                         <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the this is a long  post for the text.`This small text has to be place here, since this is </p>
                     </div>
                 </div>
 
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
                     <div class="footer_wrapper">
                         <ul class="footer_menu">
                             <li><a href="#">About us</a></li>
@@ -442,7 +463,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
                     <div class="footer_wrapper">
                         <ul class="footer_menu">
                             <li><a href="#">Support</a></li>
@@ -451,7 +472,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
                     <div class="footer_wrapper">
                         <ul class="footer_menu">
                             <li><a href="#">Jobs</a></li>
@@ -462,7 +483,7 @@
                     </div>
                 </div>
 
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
                     <div class="footer_wrapper">
                         <ul class="footer_menu">
                             <li><a href="#">Nordic Chair</a></li>

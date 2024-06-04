@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
 
+    $("#menu_bar").click(function(){
+        $(".mobile_main_menu").addClass("active");
+        $(".overlay").addClass("active");
+    });
+
+    $(".overlay").click(function(){
+        $(".mobile_main_menu").removeClass("active");
+        $(".overlay").removeClass("active");
+    });
+    $(".menu_close").click(function(){
+        $(".mobile_main_menu").removeClass("active");
+        $(".overlay").removeClass("active");
+    });
+
+
     // header sticky 
     $(window).scroll(function(){
         var sticky = $('.sticky'),
